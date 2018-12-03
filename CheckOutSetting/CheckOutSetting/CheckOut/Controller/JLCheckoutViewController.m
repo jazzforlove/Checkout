@@ -8,11 +8,13 @@
 
 #import "JLCheckoutViewController.h"
 #import "JLCheckOutViewCellTableViewCell.h"
+#import "JLCheckoutDayCell.h"
 #import "Tools.h"
 #define YXGlobalBGColor RGBColor(244,244,244)
 #define RGBColor(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
 
 static NSString *timeIdentifier = @"firstCell";
+static NSString *dayIdentifier = @"secondCell";
 static NSString *identifier = @"otherCell";
 
 @interface JLCheckoutViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -71,8 +73,16 @@ static NSString *identifier = @"otherCell";
     if (indexPath.section == 0) {
         JLCheckOutViewCellTableViewCell *timeCell = [tableView dequeueReusableCellWithIdentifier:timeIdentifier forIndexPath:indexPath];
         cell = timeCell;
+    }else if(indexPath.section == 1){
+        JLCheckoutDayCell *dayCell = [tableView dequeueReusableCellWithIdentifier:dayIdentifier forIndexPath:indexPath];
+        cell = dayCell;
     }else{
         cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+        UIButton *closeBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 80, 44)];
+        closeBtn.center = cell.contentView.center;
+        [closeBtn setTitle:@"关闭设置" forState:UIControlStateNormal];
+        [closeBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [cell.contentView addSubview:closeBtn];
     }
     
     return cell;
@@ -120,6 +130,7 @@ static NSString *identifier = @"otherCell";
         _tableview.allowsSelection = NO;
         _tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
         [_tableview registerClass:[JLCheckOutViewCellTableViewCell class] forCellReuseIdentifier:timeIdentifier];
+        [_tableview registerClass:[JLCheckoutDayCell class] forCellReuseIdentifier:dayIdentifier];
         [_tableview registerClass:[UITableViewCell class] forCellReuseIdentifier:identifier];
     }
     return _tableview;

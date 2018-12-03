@@ -19,6 +19,7 @@
 		5D155C8121B1147000534461 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D155C8021B1147000534461 /* Tools.m */; };
 		5D155C8521B122BA00534461 /* JLCheckOutViewCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D155C8321B122BA00534461 /* JLCheckOutViewCellTableViewCell.m */; };
 		5D20DC7921B4D5AE00E508AF /* UIPickerView+malPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20DC7821B4D5AE00E508AF /* UIPickerView+malPicker.m */; };
+		5D20DC7C21B4D98C00E508AF /* JLCheckoutDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20DC7B21B4D98C00E508AF /* JLCheckoutDayCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		5D155C8321B122BA00534461 /* JLCheckOutViewCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLCheckOutViewCellTableViewCell.m; sourceTree = "<group>"; };
 		5D20DC7721B4D5AE00E508AF /* UIPickerView+malPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIPickerView+malPicker.h"; sourceTree = "<group>"; };
 		5D20DC7821B4D5AE00E508AF /* UIPickerView+malPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIPickerView+malPicker.m"; sourceTree = "<group>"; };
+		5D20DC7A21B4D98C00E508AF /* JLCheckoutDayCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLCheckoutDayCell.h; sourceTree = "<group>"; };
+		5D20DC7B21B4D98C00E508AF /* JLCheckoutDayCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLCheckoutDayCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +173,8 @@
 			children = (
 				5D155C8221B122BA00534461 /* JLCheckOutViewCellTableViewCell.h */,
 				5D155C8321B122BA00534461 /* JLCheckOutViewCellTableViewCell.m */,
+				5D20DC7A21B4D98C00E508AF /* JLCheckoutDayCell.h */,
+				5D20DC7B21B4D98C00E508AF /* JLCheckoutDayCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -322,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D20DC7C21B4D98C00E508AF /* JLCheckoutDayCell.m in Sources */,
 				5D155C8521B122BA00534461 /* JLCheckOutViewCellTableViewCell.m in Sources */,
 				5D155C7C21B10A1400534461 /* JLCheckoutViewController.m in Sources */,
 				5D155C8121B1147000534461 /* Tools.m in Sources */,
