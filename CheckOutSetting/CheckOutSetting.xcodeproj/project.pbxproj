@@ -18,6 +18,7 @@
 		5D155C7C21B10A1400534461 /* JLCheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D155C7B21B10A1400534461 /* JLCheckoutViewController.m */; };
 		5D155C8121B1147000534461 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D155C8021B1147000534461 /* Tools.m */; };
 		5D155C8521B122BA00534461 /* JLCheckOutViewCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D155C8321B122BA00534461 /* JLCheckOutViewCellTableViewCell.m */; };
+		5D20DC7921B4D5AE00E508AF /* UIPickerView+malPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20DC7821B4D5AE00E508AF /* UIPickerView+malPicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		5D155C8021B1147000534461 /* Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		5D155C8221B122BA00534461 /* JLCheckOutViewCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLCheckOutViewCellTableViewCell.h; sourceTree = "<group>"; };
 		5D155C8321B122BA00534461 /* JLCheckOutViewCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLCheckOutViewCellTableViewCell.m; sourceTree = "<group>"; };
+		5D20DC7721B4D5AE00E508AF /* UIPickerView+malPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIPickerView+malPicker.h"; sourceTree = "<group>"; };
+		5D20DC7821B4D5AE00E508AF /* UIPickerView+malPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIPickerView+malPicker.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,7 @@
 		5D155C7821B109D400534461 /* CheckOut */ = {
 			isa = PBXGroup;
 			children = (
+				5D20DC7621B4D58700E508AF /* Category */,
 				5D155C7E21B10A2400534461 /* Model */,
 				5D155C7D21B10A1D00534461 /* View */,
 				5D155C7921B109E600534461 /* Controller */,
@@ -177,6 +181,15 @@
 				5D155C8021B1147000534461 /* Tools.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5D20DC7621B4D58700E508AF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				5D20DC7721B4D5AE00E508AF /* UIPickerView+malPicker.h */,
+				5D20DC7821B4D5AE00E508AF /* UIPickerView+malPicker.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +328,7 @@
 				5D155C4B21B1087C00534461 /* ViewController.m in Sources */,
 				5D155C5621B1087E00534461 /* main.m in Sources */,
 				5D155C4821B1087C00534461 /* AppDelegate.m in Sources */,
+				5D20DC7921B4D5AE00E508AF /* UIPickerView+malPicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

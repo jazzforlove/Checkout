@@ -32,7 +32,6 @@ static NSString *identifier = @"otherCell";
     
 }
 - (void)setNavigationItem{
-    //16,133,226
     self.view.backgroundColor = [UIColor whiteColor];
     UIImage *image = [Tools imageWithColor:RGBColor(16,133,226) size:CGSizeMake(self.view.bounds.size.width, 64)];
     [self.navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];

@@ -8,6 +8,7 @@
 
 
 #import "JLCheckOutViewCellTableViewCell.h"
+#import "UIPickerView+malPicker.h"
 #import "Tools.h"
 
 @interface JLCheckOutViewCellTableViewCell ()<UIPickerViewDataSource,UIPickerViewDelegate>
@@ -40,6 +41,16 @@
     [self.contentView addSubview:self.zhiLab];
     [self.contentView addSubview:self.line1];
     [self.contentView addSubview:self.line2];
+
+    NSArray *item1 = self.items[0];
+    NSArray *item2 = self.items[1];
+    [self.pickerView selectRow:item1.count +8 inComponent:0 animated:NO];
+    [self.pickerView selectRow:item2.count inComponent:1 animated:NO];
+    [self.pickerView clearSeparatorLine];
+    [self.pickerView2 selectRow:item1.count +13 inComponent:0 animated:NO];
+    [self.pickerView2 selectRow:item2.count inComponent:1 animated:NO];
+    [self.pickerView2 clearSeparatorLine];
+    
 }
 
 - (void)layoutSubviews{
@@ -56,6 +67,7 @@
     self.colonLab2.center = self.pickerView2.center;
     [self.line1 setFrame:CGRectMake(0, contentHeight*3/7-1, screenWidth, 1)];
     [self.line2 setFrame:CGRectMake(0, contentHeight*4/7-1, screenWidth, 1)];
+    
     
 }
 
@@ -84,7 +96,7 @@
         _pickerView.backgroundColor = [UIColor clearColor];
         _pickerView.dataSource = self;
         _pickerView.delegate = self;
-        _pickerView.showsSelectionIndicator = YES;
+//        _pickerView.showsSelectionIndicator = YES;
     }
     return _pickerView;
 }
@@ -94,7 +106,8 @@
         _pickerView2.backgroundColor = [UIColor clearColor];
         _pickerView2.dataSource = self;
         _pickerView2.delegate = self;
-        _pickerView2.showsSelectionIndicator = YES;
+//        _pickerView2.showsSelectionIndicator = NO;
+        
     }
     return _pickerView2;
 }
