@@ -68,7 +68,6 @@
     [self.line1 setFrame:CGRectMake(0, contentHeight*3/7-1, screenWidth, 1)];
     [self.line2 setFrame:CGRectMake(0, contentHeight*4/7-1, screenWidth, 1)];
     
-    
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
